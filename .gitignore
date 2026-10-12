@@ -1,32 +1,27 @@
-```gitignore
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-.streamlit/secrets.toml
-
 # Python
 __pycache__/
 *.py[cod]
-*.pyd
+*.pyo
+
+# Virtual environments
 .venv/
 venv/
-.pytest_cache/
+env/
 
-# Operating system
+# Environment variables and secrets
+.env
+.streamlit/secrets.toml
+
+# Test and cache files
+.pytest_cache/
+.streamlit/cache/
+
+# Local database
+data/cinematch.db
+
+# MLflow local tracking files
+mlruns/
+
+# OS files
 .DS_Store
 Thumbs.db
-
-# User data and databases
-data/cinematch.db
-data/cinematch.db-shm
-data/cinematch.db-wal
-
-# Generated model and experiment artifacts
-mlruns/
-mlartifacts/
-
-# Editor files
-.vscode/
-.idea/
-```
