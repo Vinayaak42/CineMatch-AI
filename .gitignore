@@ -1,0 +1,32 @@
+```gitignore
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+.pytest_cache/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# User data and databases
+data/cinematch.db
+data/cinematch.db-shm
+data/cinematch.db-wal
+
+# Generated model and experiment artifacts
+mlruns/
+mlartifacts/
+
+# Editor files
+.vscode/
+.idea/
+```
